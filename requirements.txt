@@ -1,3 +1,4 @@
 langchain
 streamlit
 openai
+google-search-results
