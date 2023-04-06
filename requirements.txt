@@ -2,3 +2,4 @@ langchain
 streamlit
 openai
 google-search-results
+google-api-python-client
