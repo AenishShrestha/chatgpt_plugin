@@ -6,6 +6,10 @@ from langchain.chat_models import ChatOpenAI
 st.title("ChatGPT + Google")
 user_input = st.text_input("Ask me anything: Hi, I am Google")
 
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+google_cse_id = st.secretes["google_cse_id"]
+
 @st.cache(persist=True, allow_output_mutation=True)
 def googlesearch(user_input):
     tool_names = ["google-search"]
