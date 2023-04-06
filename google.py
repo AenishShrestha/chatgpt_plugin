@@ -8,7 +8,7 @@ user_input = st.text_input("Ask me anything: Hi, I am Google")
 
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
-google_cse_id = st.secrets["google_cse_id"]
+GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
 
 @st.cache(persist=True, allow_output_mutation=True)
 def googlesearch(user_input):
