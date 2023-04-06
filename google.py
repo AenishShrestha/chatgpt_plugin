@@ -7,7 +7,7 @@ st.title("ChatGPT + Google")
 user_input = st.text_input("Ask me anything: Hi, I am Google")
 
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-google_api_key = st.secrets["google_api_key"]
+GOOGLE_API_KEY = st.secrets["google_api_key"]
 google_cse_id = st.secrets["google_cse_id"]
 
 @st.cache(persist=True, allow_output_mutation=True)
