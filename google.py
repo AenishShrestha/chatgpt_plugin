@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.chat_models import ChatOpenAI
@@ -28,3 +29,7 @@ if user_input:
     st.success(result)
 else:
     st.error("Enter your input")
+    
+st.markdown("Made with ❤️ by [Aenish Shrestha](https://twitter.com/aenish_shrestha).")
+
+components.iframe("https://aenishshrestha.substack.com/embed",height=500)
