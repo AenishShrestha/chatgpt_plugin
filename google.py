@@ -4,6 +4,9 @@ from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.chat_models import ChatOpenAI
 
+st.set_page_config(page_title="ChatGptWithGoogle", page_icon="🤖", layout="wide")
+
+
 st.title("ChatGPT + Google")
 user_input = st.text_input("Ask me anything: Hi, I am Google")
 
